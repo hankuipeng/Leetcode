@@ -14,6 +14,31 @@ Created on Thu Sep 17 12:29:13 2020
 nums = [8,1,2,2,3]
 
 
+#%%
+import numpy as np
+
+list_ordered = sorted(list(nums))
+
+list_set_ordered = sorted(list(set(nums)))
+
+from collections import Counter
+
+ctr = Counter(list_ordered)
+freqs = [ctr[v] for v in ctr]
+
+
+smaller_cnt = []
+for i in range(len(list_set_ordered)):
+    smaller_cnt.extend([sum(freqs[:i])]*ctr[list_set_ordered[i]])
+
+ind_li = np.argsort(list(nums))
+
+res = [0 for _ in range(len(nums))]
+
+for i, v in enumerate(ind_li):
+    res[v] = smaller_cnt[i]
+
+
 #%% 
 # What the question is really asking is to return the index of a sorted list.
 import numpy as np
