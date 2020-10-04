@@ -10,6 +10,7 @@ Created on Thu Sep 17 12:29:13 2020
 
 # Link to question: https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 
+
 #%% test case 
 nums = [8,1,2,2,3]
 
