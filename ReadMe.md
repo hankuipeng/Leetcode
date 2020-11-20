@@ -1,1 +1,1 @@
-This folder contains my attempts to the problems I have attempted (and passed) on LeetCode. 
+This folder contains my solutions to the problems I have attempted on LeetCode. 
